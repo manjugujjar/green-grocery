@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujjar Grocery App</title>
+
+    <!-- link css files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="shortcut icon" href="./img/title_logo.png" type="image/x-icon">
+    <!-- link css files end -->
+
+    <!-- link font awesom cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link font awesom end -->
+</head>
+
+<body>
+    <!-- header section start-->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><i class="fa fa-shopping-basket"></i> Grocery</a>
+        </div>
+        <div class="nav-link">
+            <nav class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#review">Review</a></li>
+                <!-- <li><a href="#blogs">Blogs</a></li> -->
+            </nav>
+        </div>
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <span class="total-cart">0</span>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="text" id="search-box" name="search-box" placeholder="Search here....">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+
+            <h2 class="box-content-heading">Shopping Cart</h2>
+            <hr>
+            <div class="listCart">
+                <div class="row">
+                    <h3 class="center">No item</h3>
+                </div>
+
+            </div>
+            <!-- cart total -->
+            <div class="cart-total">
+                <h2>Total : &#x20b9;0/-</h2>
+            </div>
+            <div class="btn">Check Out</div>
+
+        </div>
+
+        <div class="cart-login cart-input">
+            <form action="index.html">
+                <h2>LogIn Now</h2>
+                <input type="email" placeholder="Your email" class="email" name="email">
+                <input type="password" name="password" placeholder="Your Password" class="pasword">
+                <button class="btn" type="submit">Log In</button>
+                <p>Forget your Password <a href="">click here</a></p>
+                <p>Don't have an account? <a href="#cart-signup" id="cart-signup">create new</a></p>
+            </form>
+
+        </div>
+
+        <div class="cart-signup cart-input">
+            <form action="">
+                <h2>Create New Account</h2>
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="password" placeholder="Enter Your Password" class="password">
+                <input type="password" placeholder="Enter Your Confirm Password" class="confirm_password">
+                <button class="btn">Create New Account</button>
+                <p>If already account? <a href="#login-btn" id="login-link">Login</a></p>
+            </form>
+        </div>
+
+    </header>
+    <!-- header section end -->
+
+    <main class="main">
+
+        <!-- home section start -->
+        <section class="home section" id="home">
+            <div class="home-container">
+                <h2>Fresh and <span>Organic</span> Products for you</h2>
+
+                <div class="para-text">
+                    <p>Immerse Yourself in Nature's Freshness: Explore Organic Delights at Gujjar's Green Grocery
+                        Online! Shop for fresh fruits and vegetables from the comfort of your home. Experience nature's
+                        bounty with every click!</p>
+
+
+                    <!-- <p>"In our market, discover the freshest and most flavorful fruits and vegetables. Explore our special
+                            selection and order your favorites, so the freshness of farming can reach your doorstep."</p> -->
+                </div>
+
+                <button class="btn"><a href="#products"> Shop Now </a></button>
+            </div>
+        </section>
+        <!-- home section end -->
+
+        <!-- Features section start -->
+        <section class="features section" id="features">
+            <h1 class="heading">Our <span>Features</span></h1>
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/feature-img1.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h2 class="box-content-heading">Fresh and Organic</h2>
+                        <p>Organic certification for purity and adherence to standards and Freshness sourced directly
+                            from farms</p>
+                        <div class="btn" id="qualityFeatureBtn">Read more</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/feature-img2.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h2 class="box-content-heading">Free Delivery</h2>
+                        <p>Get your favorite items delivered straight to your door without any extra charges</p>
+                        <div class="btn" id="freeDeliveryBtn">Read more</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/feature-img3.png" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h2 class="box-content-heading">Easy Payments</h2>
+                        <p>Secure online payments or cash on delivery options available for easy and convenient
+                            transactions</p>
+                        <div class="btn" id="ePaymentBtn">Read more</div>
+                    </div>
+                </div>
+
+
+
+                <!-- read more data for quality start -->
+                <div class="moreContent" id="qualityFeature">
+                    <div class="content">
+                        <h2 class="box-content-heading">Fresh and Organic</h2>
+                        <p>Organic certification for purity and adherence to standards and Freshness sourced
+                            directly
+                            from farms.</p>
+                        <p>There are some more feature :</p>
+                        <ol type="1">
+                            <li><span>Premium Quality:</span> Handpicked selection of the finest organic produce.</li>
+                            <li><span>Farm Freshness: </span> Directly sourced from trusted farms, ensuring peak
+                                freshness.</li>
+                            <li> <span>Certified Organic:</span> Guaranteed organic certification for purity and
+                                sustainability.
+                            </li>
+                            <li><span>Nutrient-Rich: </span> Rich in vitamins, minerals, and antioxidants for optimal
+                                health.
+                            </li>
+                            <li><span>Ethical Sourcing:</span> Supporting sustainable farming practices and local
+                                growers.</li>
+                            <li><span>Variety: </span>A diverse range of seasonal fruits and vegetables to suit every
+                                preference.
+                            </li>
+                            <li><span>Convenience:</span> Easy online ordering and delivery to your doorstep for
+                                ultimate
+                                convenience.</li>
+                            <li><span>Healthy Lifestyle:</span> Promoting a healthier lifestyle with wholesome, organic
+                                choices.
+                            </li>
+                            <li><span>Environmentally Friendly: </span> Reduced environmental impact through organic
+                                farming
+                                methods.
+                            </li>
+                            <li><span>Customer Satisfaction:</span> Dedicated to providing the best quality produce for
+                                customer
+                                satisfaction.</li>
+                        </ol>
+                    </div>
+                    <div class="btn readLess" id="readLess">Read Less</div>
+                </div>
+                <!-- read more data for quality end -->
+
+                <!-- read more data  for free delivery start -->
+
+                <div class="moreContent" id="freeDelivery">
+                    <div class="content">
+                        <h2 class="box-content-heading">Free Delivery</h2>
+                        <p>Get your favorite items delivered straight to your door without any extra charges.</p>
+                        <p>There are some more feature :</p>
+                        <ol type="1">
+                            <li><span>Complimentary Shipping:</span> Enjoy free delivery on all orders, saving you money
+                                on shipping fees.</li>
+                            <li><span>Timely Delivery: </span> Receive your items promptly, ensuring you get what you
+                                need when you need it.</li>
+                            <li> <span>Convenient Service:</span> Experience hassle-free shipping directly to your
+                                doorstep, making shopping effortless.
+                            </li>
+                            <li><span>Increased Affordability:</span> Save on additional costs with our complimentary
+                                delivery service, making purchases more budget-friendly.
+                            </li>
+                            <li><span>Reliable Support:</span> Rest assured with our dependable delivery service,
+                                providing peace of mind for your shopping experience.</li>
+                            <li><span>Flexible Options:</span>Choose from various delivery methods to suit your
+                                preferences and schedule, including expedited or standard shipping.
+                            </li>
+                            <li><span>Enhanced Convenience:</span> Make your shopping experience more convenient by
+                                opting for our free delivery service, saving you time and effort.</li>
+                            <li><span>Customer Satisfaction:</span> Our commitment to delivering your items promptly and
+                                efficiently ensures your satisfaction with every purchase.
+                            </li>
+
+                        </ol>
+                    </div>
+                    <div class="btn readLess">Read Less</div>
+                </div>
+
+                <!-- read more data  for free delivery end -->
+
+
+                <!-- read more data  for free delivery start -->
+
+                <div class="moreContent" id="ePayment">
+                    <div class="content">
+                        <h2 class="box-content-heading">Easy Payments</h2>
+                        <p>Secure online payments or cash on delivery options available for easy and convenient
+                            transactions.</p>
+                        <p>There are some more feature :</p>
+                        <ol type="1">
+                            <li><span>Secure Online Transactions:</span> Safely complete purchases with encrypted
+                                payment gateways, ensuring your financial information remains protected.</li>
+
+                            <li><span>Convenient Options: </span> Choose from various payment methods, including
+                                credit/debit cards, digital wallets, and online banking, for flexibility.</li>
+
+                            <li> <span>Cash on Delivery:</span> Opt for cash payments upon receiving your order,
+                                providing convenience and peace of mind.
+                            </li>
+                            <li><span>Seamless Checkout Process:</span> Enjoy a smooth and efficient checkout
+                                experience, minimizing hassle and saving time.
+                            </li>
+                            <li><span>Instant Confirmation:</span> Receive immediate payment confirmation, allowing you
+                                to track your order and plan accordingly.</li>
+                            <li><span>Accessibility:</span>Access payment options easily through our user-friendly
+                                interface, making transactions effortless for all users.
+                            </li>
+                            <li><span>24/7 Support:</span> Benefit from round-the-clock assistance for any
+                                payment-related queries or concerns, ensuring a seamless shopping experience. </li>
+                            <li><span>Transparency:</span> Stay informed about transaction details, including payment
+                                breakdowns and receipts, for full transparency and accountability.
+                            </li>
+
+                        </ol>
+                    </div>
+                    <div class="btn readLess">Read Less</div>
+                </div>
+
+                <!-- read more data  for free delivery end -->
+
+                <!-- read more data start -->
+
+            </div>
+        </section>
+        <!-- Features section end -->
+
+        <!-- Product section start -->
+        <section class="products" id="products">
+            <h1 class="heading">Our <span>Products</span></h1>
+
+            <!-- fruit wrapper section  -->
+            <div class="product-slider">
+                <div class="wrapper fruitWrapper" id="fruitWrapper">
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./img./img--1.jpg" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h3 class="box-content-heading">Fresh Orange</h3>
+                            <p>Price: &#x20b9; 9.99/- </p>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <div class="btn">Add to cart</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="moreProduct">
+                    <button class="btn fruitsProductBtn" id="fruitsMoreProductBtn">View
+                        All Product</button>
+                </div>
+            </div>
+
+            <!-- vegetables wrapper section  -->
+            <div class="product-slider">
+                <div class="wrapper vegetableWrapper" id="vegetableWrapper">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./img./img--1.jpg" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h3 class="box-content-heading">Fresh Orange</h3>
+                            <p>Price: &#x20b9; 9.99/- </p>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <div class="btn">Add to cart</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreProduct">
+                    <button class="btn vegetablesProductBtn" id="vegetablesMoreProductBtn">View All Product</button>
+                </div>
+
+            </div>
+
+            <!-- Dairy wrapper section  -->
+            <div class="product-slider">
+                <div class="wrapper dairyWrapper" id="dairyWrapper">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./img/Dairy/milk.jpg" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h3 class="box-content-heading">Dairy</h3>
+                            <p>Price &#x20b9; 55/-</p>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <div class="btn cart-btn">Add to cart</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreProduct">
+                    <button class="btn dairyWrapperBtn" id="dairyMoreProductBtn">View All Product</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- Product section end -->
+
+        <!-- Producr categories section start -->
+
+        <section class="categories" id="categories">
+            <h2 class="heading">Our <span>Categories</span></h2>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/cat-1.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h2 class="box-content-heading">Fresh Vegetables</h2>
+                        <p>upto 75% off</p>
+                        <a href="#vegetableWrapper" class="btn">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/cat-2.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h2 class="box-content-heading">Fresh Fruits</h2>
+                        <p>upto 55% off</p>
+                        <a href="#fruitWrapper" class="btn">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/cat-3.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h2 class="box-content-heading">Dairy Product</h2>
+                        <p>upto 55% off</p>
+                        <a href="#dairyWrapper" class="btn">Shop Now</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Producr categories section end -->
+
+        <!-- customer's Review section start  -->
+        <section class="review" id="review">
+            <h1 class="heading">Customer's <span>Review</span></h1>
+
+            <div class="wrapper">
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/user-1.png" alt="">
+                    </div>
+                    <div class="box-content">
+                        <p>"Absolutely delicious! These apples are always fresh and juicy. Perfect for snacking or
+                            making
+                            homemade apple pie. Highly recommend!"</p>
+                        <h2 class="box-content-heading">Ram</h2>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <!-- <i class="fa fa-star-half"></i> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/user-1.png" alt="">
+                    </div>
+                    <div class="box-content">
+                        <p>"This cheese is amazing! It's rich, creamy, and melts perfectly. Whether I'm using it in
+                            sandwiches, pasta dishes, or simply enjoying it on crackers, it always elevates the flavor.
+                            Highly recommend!" </p>
+                        <h2 class="box-content-heading">Shyam</h2>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./img/user-1.png" alt="">
+                    </div>
+                    <div class="box-content">
+                        <p>"The broccoli was vibrant green and tasted incredibly fresh. It steamed to perfection and
+                            made a nutritious side dish."</p>
+                        <h2 class="box-content-heading">Harri</h2>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- customer's Review section end  -->
+        <!-- Blog section start  -->
+        <!-- <section class="blogs" id="blogs">
+            todo later
+        </section> -->
+        <!-- Blog section end  -->
+
+    </main>
+    <!-- footer section  -->
+    <footer class="footer padding-side">
+        <div class="box-container">
+            <div class="box">
+                <div class="box-content">
+                    <h2 class="box-content-heading">Grocery <span> <i class="fa fa-shopping-basket"></i> </span>
+                    </h2>
+                    <!-- <p>Come visit us at Gujjar's Grocery, to explore our aisles and
+                        discover
+                        the finest selection of groceries. We look forward to welcoming you to our store.</p> -->
+                    <p>Thank you for choosing Gujjar's Green Grocery for all your grocery needs!</p>
+                    <p>Stay updated on our latest offers, promotions, and new arrivals by following us on social media:
+                    </p>
+                    <div class="share-icons">
+                        <a class="fa-brands fa-facebook"></a>
+                        <a class="fa-brands fa-twitter"></a>
+                        <a class="fa-brands fa-instagram"></a>
+                        <a class="fa-brands fa-github"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <h2 class="box-content-heading">Contact Info</h2>
+                    <p>For inquiries or assistance, feel free to contact us via: </p>
+                    <br>
+                    <p><i class="fa fa-phone"></i> +919876543210</p>
+                    <p><i class="fa-regular fa-envelope"></i> grocery@Gujjar.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Hisar road, Fatehabad, Haryana</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <h2 class="box-content-heading">Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">&nbsp; Home</a></li>
+                        <li><a href="#features">&nbsp; Features</a></li>
+                        <li><a href="#products"> &nbsp; Products</a></li>
+                        <li><a href="#categories"> &nbsp; Categories</a></li>
+                        <li><a href="#review">&nbsp; Review</a></li>
+                        <!-- <li><a href="#blogs">&nbsp; Blogs</a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <h2 class="box-content-heading">Newsletter</h2>
+                    <p>Subscrible for latest updates</p>
+                    <input type="text" placeholder="Enter Your Email">
+                    <button class="btn">Subscrible</button>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="footer-content">
+            <p>Created By <span>Manju Gujjar</span> | All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+
+</html>
